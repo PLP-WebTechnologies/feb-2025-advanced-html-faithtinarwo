@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Webpage</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Explore, learn, and enjoy!</p>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the homepage of my awesome website. I hope you find it useful and interesting!</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Learn more about what we do and how we can help you achieve your goals.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>We offer various services that cater to your needs. Our team is dedicated to providing the best experience possible.</p>
+        </section>
+
+        <!-- Ordered list with Roman numerals -->
+        <section id="list">
+            <h2>Our Services (Roman Numerals)</h2>
+            <ol type="I">
+                <li>Consulting</li>
+                <li>Development</li>
+                <li>Design</li>
+                <li>Support</li>
+            </ol>
+        </section>
+
+        <!-- External image from Pexels -->
+        <section id="image">
+            <h2>Our Team</h2>
+            <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg" alt="Teamwork" width="600" />
+        </section>
+
+        <!-- Table of 5 contacts -->
+        <section id="contacts">
+            <h2>Contact Information</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St</td>
+                        <td>(555) 123-4567</td>
+                        <td>johndoe@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Oak St</td>
+                        <td>(555) 234-5678</td>
+                        <td>janesmith@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>789 Pine St</td>
+                        <td>(555) 345-6789</td>
+                        <td>mikejohnson@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>101 Maple St</td>
+                        <td>(555) 456-7890</td>
+                        <td>emilydavis@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Brown</td>
+                        <td>202 Birch St</td>
+                        <td>(555) 567-8901</td>
+                        <td>robertbrown@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration form -->
+        <section id="registration">
+            <h2>Registration Form</h2>
+            <form action="/submit_form" method="POST">
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+                <br>
+
+                <!-- Date -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+
+                <!-- Dropdown -->
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+
+                <!-- Radio Buttons -->
+                <label for="newsletter">Subscribe to newsletter:</label>
+                <input type="radio" id="yes" name="newsletter" value="yes" required> Yes
+                <input type="radio" id="no" name="newsletter" value="no" required> No
+                <br>
+
+                <!-- Checkboxes -->
+                <label for="interests">Select your interests:</label>
+                <input type="checkbox" id="coding" name="interests" value="coding"> Coding
+                <input type="checkbox" id="design" name="interests" value="design"> Design
+                <input type="checkbox" id="marketing" name="interests" value="marketing"> Marketing
+                <br>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>
